@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     column-gap: 95px;
-    margin: 0 165px 438px 165px;
+    margin: 0 165px 350px 165px;
 }
 .hero-left {
     width: 540px;
@@ -51,11 +51,15 @@ p {
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
+    text-align: center;
     cursor: pointer;
 }
 .btn-main {
     background-color: #5175ff;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-main:hover {
     background-color: #829cff;
@@ -117,7 +121,9 @@ p {
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 16px;
+    
 }
+
 .card-pro {
     background-color: #5175ff;
     background-image: url(./assets/home/bg-pattern-pricing.svg);
@@ -135,6 +141,10 @@ p {
     margin-top: 16px;
     background: #829cff;
     color: #5175ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
 }
 .btn-basic {
     font-family: 'Kumbh Sans', sans-serif;
@@ -142,6 +152,7 @@ p {
     font-weight: 700;
     line-height: 28px;
     color: #5175ff;
+   
 }
 .btn-pro {
     background-color: #fff ;
@@ -258,11 +269,16 @@ h6 {
     .card-pro {
         background-position: 165% 50%;
     }
+    .btn-card {
+        margin-left: 0;
+    }
     .btn-desktop {
         display: none;
     }
     .btn-tablet {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .counter-box {
         flex-direction: column;
@@ -320,10 +336,15 @@ h6 {
         text-align: center;
     }
     .btn-desktop {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .btn-tablet {
         display: none;
+    }
+    .btn-basic {
+       padding: 24px;
     }
     .counter-box {
         width: 328px;
